@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>鸡汤来喽</title>
+    <style>
+        *{margin: 0;padding: 0;box-sizing: border-box;}
+        body{
+            text-align: center;
+            padding-top: 80px;
+            font-size: 20px;
+            background: #f5f5f5;
+        }
+        h1{color: #222;margin-bottom: 30px;}
+        textarea{
+            width: 400px;
+            height: 100px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+        button{
+            margin-top: 20px;
+            padding: 10px 30px;
+            font-size: 18px;
+            background: #409eff;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .result{
+            margin-top: 30px;
+            font-size: 22px;
+            color: #333;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🍲 鸡汤来喽</h1>
+    <form method="post">
+        <textarea name="msg" placeholder="随便输入点什么，我给你一句鼓励鸡汤～"></textarea>
+        <br>
+        <button type="submit">生成鸡汤</button>
+    </form>
+    <div class="result">{{soup}}</div>
+</body>
+</html>
