@@ -22,5 +22,5 @@ def index():
         soup = random.choice(chicken_soup)
     return render_template("index.html", soup=soup)
 
-if __name__ == "__main__":
-    app.run(debug=True)
+# 注意！这里删掉了 debug=True，而且不用写 app.run()
+# Render 会用 Procfile 里的 gunicorn 启动，所以本地的 app.run() 可以删掉
